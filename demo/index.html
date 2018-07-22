@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>jsslider demo</title>
+<style type="text/css">
+*{word-wrap:break-word}
+*, body, div, span, ul, li, table, tbody, th, tr, td, img, a, input, select, option, p {margin:0;padding:0}
+html, body {width:100%;margin:0 auto;text-align:left;padding:0;-webkit-text-size-adjust:none;font:12px/1.5 å¾®è½¯é›…é»‘,å®‹ä½“,serif,Arial,Verdana,Geneva,Helvetica,sans-serif;color:#3f3f3f;/*background-color:#f9f9f9*/}
+textarea{resize:none}
+*,body,ul,ol,li,dl,dd,p,h1,h2,h3,h4,h5,h6,form,fieldset{margin:0;padding:0}
+table{empty-cells:show;border-collapse:collapse}
+caption,th{text-align:left;font-weight:400}
+ul li,.xl li{list-style:none}
+h1,h2,h3,h4,h5,h6{font-size:1em}
+em,cite,i{font-style:normal}
+a{color:#333;text-decoration:none}
+a:hover{text-decoration:underline}
+a img{border:none}
+label{cursor:pointer}
+img { border:none; }
+*:focus{outline:0}
+.clearfix:after {content:".";display:block;height:0;clear:both;visibility:hidden}
+.cl:after{content:".";display:block;height:0;clear:both;visibility:hidden}
+.cl{zoom:1}
+.fl{float:left}
+.fr{float:right}
+.rowLast{margin-right:0}
+.colLast{margin-bottom:0}
+.cutstr{vertical-align:text-bottom;word-wrap:normal;white-space:nowrap;overflow:hidden;-o-text-overflow:ellipsis;/* Opera */ text-overflow:ellipsis;/* IE, Safari (WebKit) */}
+
+.wrapper{width:100%;min-width:1000px;margin:0 auto;zoom:1;_width:expression((document.documentElement.clientWidth || document.body.clientWidth) < 1000 ? "1000px" : "auto")}
+
+/*index banner begin*/
+#banner_wrap {width:498px;height:220px;margin:0;padding:0;position:relative}
+.banner_content{width:100%;height:100%;position:relative}
+.banner {width:100%;height:100%;display:block;position:absolute;left:0;top:0;background:no-repeat center center}
+.map{position:absolute}
+.banner_nav {position:absolute;right:18px;bottom:18px}
+.banner_nav ul li {float:left;display:inline-block;width:15px;height:15px;margin:0 8px 0 0;cursor:pointer;border-radius:7px;background:rgba(224,224,224,0.8);}
+.banner_nav ul li.curr{background:rgba(255,255,255,1);}
+/*index banner end*/
+
+.bcont{width:100%;height:100%;margin:0 auto;position:relative}
+#banner0{background-image:url(images/s1.png)}
+#banner1{background-image:url(images/s2.png)}
+#banner2{background-image:url(images/s3.png)}
+#banner3{background-image:url(images/s4.png)}
+#banner4{background-image:url(images/s5.png)}
+#banner5{background-image:url(images/s6.png)}
+#banner6{background-image:url(images/s7.png)}
+#map0{width:120px;height:60px;top:360px;left:160px}
+</style>
+<script type="text/javascript" src="//apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+</head>
+<body>
+<div class="wrapper">
+<!--示例1 start-->
+		<div id="banner_wrap">
+			<div class="banner_content">
+				<div id="banner0" class="banner">
+					<div class="bcont"><a id="map0" class="map" href="javascript:;"></a></div>
+				</div>
+				<a id="banner1" class="banner" href="javascript:;"></a>
+				<a id="banner2" class="banner" href="javascript:;"></a>
+				<a id="banner3" class="banner" href="javascript:;"></a>
+				<a id="banner4" class="banner" href="javascript:;"></a>
+				<a id="banner5" class="banner" href="javascript:;"></a>
+				<a id="banner6" class="banner" href="javascript:;"></a>
+			</div>
+			<div class="banner_nav">
+				<ul class="nav">
+					<li class="navLi"></li>
+					<li class="navLi"></li>
+					<li class="navLi"></li>
+					<li class="navLi"></li>
+					<li class="navLi"></li>
+					<li class="navLi"></li>
+					<li class="navLi"></li>
+				</ul>
+			</div>
+		</div>
+		<script type="text/javascript">
+		var slider1;
+		$(function(){
+		  slider1 = $('#banner_wrap').slider({
+				'banItemClass': 'banner',
+				'navItemClass': 'navLi',
+				'navWrapClass': 'banner_nav',
+				'perpage': 7,
+				'effect': 'fade',
+				'speed': 3000
+			}).data('slider');
+		});
+		</script>
+<!--示例1 end-->
+
+</div><!--//.wrapper-->
+<script type="text/javascript" src="../jsslider.js"></script>
+</body>
+</html>
