@@ -18,3 +18,5 @@ $(function(){
     }).data('slider');
 });
 ```
+# 示例
+[点此预览](https://bolatoo.com/h5/jsslider/demo/ "点此预览")
